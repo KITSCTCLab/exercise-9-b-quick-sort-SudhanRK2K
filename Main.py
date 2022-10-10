@@ -15,8 +15,9 @@ def quick_sort(data, low, high) -> List[int]:
     # Write code here
     if low<high :
         pi = partition(arr,low,high)
-        quick_sort(arr,low,pi-)
+        quick_sort(arr,low,pi-1)
         quick_sort(arr,pi+1,high)
+        return arr
 
 
 input_data = input()
