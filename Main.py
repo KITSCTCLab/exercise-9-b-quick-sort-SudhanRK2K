@@ -1,5 +1,14 @@
 from typing import List
 
+def partition(array,low,high):
+    pivot = array[high]
+    i = (low-1)
+    for j in range (low,high):
+        if array[j]<pivot:
+            i++
+            swap array[i] and array[j]
+            
+
 def quick_sort(data, low, high) -> List[int]:
     # Write code here
 
